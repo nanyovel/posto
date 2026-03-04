@@ -26,7 +26,7 @@ export function Navbar() {
       <nav className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4 lg:px-8">
         <Link href="/" className="flex items-center gap-2">
           <Image
-            src="images/logo/logo negro.png"
+            src="/images/logo/logo-negro.png"
             alt="Logo Posto Design"
             width={200}
             height={200}
