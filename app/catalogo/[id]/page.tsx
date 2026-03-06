@@ -32,6 +32,7 @@ export default async function ProductDetailPage({
   const product = products.find((p) => p.id === id);
 
   if (!product) {
+    console.log("no❌❌❌❌❌❌❌");
     notFound();
   }
 
@@ -96,9 +97,9 @@ export default async function ProductDetailPage({
               <h1 className="font-serif text-3xl md:text-4xl lg:text-5xl font-bold text-foreground leading-tight text-balance">
                 {product.name}
               </h1>
-              <p className="mt-4 text-xl font-medium text-foreground">
+              {/* <p className="mt-4 text-xl font-medium text-foreground">
                 {product.price}
-              </p>
+              </p> */}
               <p className="mt-6 text-base text-muted-foreground leading-relaxed">
                 {product.description}
               </p>
@@ -208,9 +209,9 @@ export default async function ProductDetailPage({
                   <h3 className="font-serif text-lg font-bold text-foreground group-hover:text-muted-foreground transition-colors">
                     {rp.name}
                   </h3>
-                  <p className="text-sm text-muted-foreground mt-1">
+                  {/* <p className="text-sm text-muted-foreground mt-1">
                     {rp.price}
-                  </p>
+                  </p> */}
                 </Link>
               ))}
             </div>

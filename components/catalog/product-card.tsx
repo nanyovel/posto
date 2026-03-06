@@ -1,16 +1,13 @@
-"use client"
+"use client";
 
-import Image from "next/image"
-import Link from "next/link"
-import { ArrowRight } from "lucide-react"
-import type { Product } from "@/lib/catalog-data"
+import Image from "next/image";
+import Link from "next/link";
+import { ArrowRight } from "lucide-react";
+import type { Product } from "@/lib/catalog-data";
 
 export function ProductCard({ product }: { product: Product }) {
   return (
-    <Link
-      href={`/catalogo/${product.id}`}
-      className="group block"
-    >
+    <Link href={`/catalogo/${product.id}`} className="group block">
       <div className="relative aspect-[4/3] overflow-hidden mb-4">
         <Image
           src={product.image}
@@ -34,20 +31,20 @@ export function ProductCard({ product }: { product: Product }) {
             {product.category === "cocinas"
               ? "Cocinas"
               : product.category === "salas"
-                ? "Salas"
-                : product.category === "comedores"
-                  ? "Comedores"
-                  : product.category === "dormitorios"
-                    ? "Dormitorios"
-                    : product.category === "oficinas"
-                      ? "Oficinas"
-                      : "Banos"}
+              ? "Salas"
+              : product.category === "comedores"
+              ? "Comedores"
+              : product.category === "dormitorios"
+              ? "Dormitorios"
+              : product.category === "oficinas"
+              ? "Oficinas"
+              : "Banos"}
           </p>
         </div>
-        <p className="text-sm font-medium text-foreground shrink-0">
+        {/* <p className="text-sm font-medium text-foreground shrink-0">
           {product.price}
-        </p>
+        </p> */}
       </div>
     </Link>
-  )
+  );
 }

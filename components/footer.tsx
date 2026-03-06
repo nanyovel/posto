@@ -11,7 +11,7 @@ export function Footer() {
           <div className="md:col-span-1">
             <Link href="/" className="flex items-center gap-2">
               <Image
-                src="images/logo/logo blanco.png"
+                src="/images/logo/logoblanco.png"
                 alt="Logo Posto Design"
                 width={200}
                 height={200}

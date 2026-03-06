@@ -1,10 +1,11 @@
 import type { Metadata } from "next";
 import { BlogGrid } from "@/components/blog/blog-grid";
+import Newsletter from "@/components/newLetter";
 
 export const metadata: Metadata = {
   title: "Blog",
   description:
-    "Inspiracion, tendencias y consejos de diseno de interiores del equipo de Posto Design.",
+    "Inspiracion, tendencias y consejos de diseño de interiores del equipo de Posto Design.",
 };
 
 export default function BlogPage() {
@@ -21,7 +22,7 @@ export default function BlogPage() {
           </h1>
           <p className="mt-6 text-base md:text-lg text-muted-foreground leading-relaxed max-w-2xl">
             Tendencias, consejos practicos y reflexiones sobre el arte del
-            diseno de interiores, directamente desde nuestro estudio.
+            diseño de interiores, directamente desde nuestro estudio.
           </p>
         </div>
       </section>
@@ -32,6 +33,7 @@ export default function BlogPage() {
           <BlogGrid />
         </div>
       </section>
+      <Newsletter />
     </>
   );
 }

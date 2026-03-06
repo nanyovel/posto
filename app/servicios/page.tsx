@@ -10,6 +10,7 @@ import {
   Lightbulb,
   Layers,
 } from "lucide-react";
+import Newsletter from "@/components/newLetter";
 
 export const metadata: Metadata = {
   title: "Servicios",
