@@ -11,8 +11,8 @@ export const metadata: Metadata = {
 export default function BlogPage() {
   return (
     <>
-      {/* Hero */}
-      <section className="pt-32 pb-16 lg:pt-40 lg:pb-20 bg-background px-6">
+      {/* Hero - Asymmetric Layout */}
+      <section className="pt-32 pb-16 lg:pt-40 lg:pb-20 bg-secondary px-6">
         <div className="mx-auto max-w-7xl">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12">
             <div className="lg:col-span-7 flex flex-col justify-center">
