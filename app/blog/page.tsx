@@ -12,30 +12,33 @@ export default function BlogPage() {
   return (
     <>
       {/* Hero */}
-      <section className="relative pt-32 pb-24 lg:pt-40 lg:pb-32 overflow-hidden">
-        <Image
-          src="/images/blog/blog-hero.jpg"
-          alt="Mesa de trabajo de diseno de interiores con muestras y planos"
-          fill
-          className="object-cover"
-          priority
-        />
-        <div className="absolute inset-0 bg-primary/70" />
-        <div className="relative z-10 mx-auto max-w-7xl px-6">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-end">
-            <div>
-              <p className="text-xs uppercase tracking-[0.3em] text-primary-foreground/60 mb-4">
+      <section className="pt-32 pb-16 lg:pt-40 lg:pb-20 bg-background px-6">
+        <div className="mx-auto max-w-7xl">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12">
+            <div className="lg:col-span-7 flex flex-col justify-center">
+              <p className="text-xs uppercase tracking-[0.3em] text-muted-foreground mb-6">
                 Blog
               </p>
-              <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl font-bold text-primary-foreground leading-tight text-balance">
+              <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-foreground leading-[1.1] text-balance">
                 Ideas e inspiracion para tus espacios
               </h1>
+              <div className="mt-8 flex items-center gap-6">
+                <div className="h-px w-16 bg-foreground/20" />
+                <p className="text-sm text-muted-foreground max-w-xs">
+                  Tendencias, consejos y reflexiones sobre el arte del diseno de interiores
+                </p>
+              </div>
             </div>
-            <div className="lg:pb-2">
-              <p className="text-base md:text-lg text-primary-foreground/80 leading-relaxed max-w-md">
-                Tendencias, consejos practicos y reflexiones sobre el arte del
-                diseno de interiores, directamente desde nuestro estudio.
-              </p>
+            <div className="lg:col-span-5">
+              <div className="relative aspect-[4/5] overflow-hidden">
+                <Image
+                  src="/images/blog/blog-hero.jpg"
+                  alt="Mesa de trabajo de diseno de interiores"
+                  fill
+                  className="object-cover"
+                  priority
+                />
+              </div>
             </div>
           </div>
         </div>
