@@ -30,7 +30,7 @@ export function Navbar() {
             alt="Logo Posto Design"
             width={200}
             height={200}
-            className="object-cover h-auto"
+            className="object-cover h-12 w-auto"
             priority
           />
         </Link>
