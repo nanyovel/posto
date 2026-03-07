@@ -12,12 +12,12 @@ export function HeroSection() {
         className="object-cover"
         priority
       />
-      <div className="absolute inset-0 bg-primary/80" />
-      <div className="relative z-10 text-center px-6 max-w-4xl mx-auto ">
+      <div className="absolute inset-0 bg-primary/60" />
+      <div className="relative z-10 text-center px-6 max-w-4xl mx-auto">
         <p className="text-xs uppercase tracking-[0.4em] text-primary-foreground/70 mb-6 font-sans">
           Interior Design Studio
         </p>
-        <h1 className="font-serif text-5xl md:text-6xl lg:text-7xl font-bold text-primary-foreground leading-none text-balance">
+        <h1 className="font-serif text-5xl md:text-6xl lg:text-7xl font-bold text-primary-foreground leading-tight text-balance">
           Donde la elegancia encuentra su espacio
         </h1>
         <p className="mt-6 text-base md:text-lg text-primary-foreground/80 max-w-2xl mx-auto leading-relaxed font-sans">
