@@ -33,8 +33,8 @@ export function Navbar() {
           <Image
             src="/images/logo/logonegro.png"
             alt="Logo Posto Design"
-            width={200}
-            height={200}
+            width={120}
+            height={60}
             className="object-cover h-auto"
             priority
           />
