@@ -18,11 +18,12 @@ export function HeroSection() {
           Interior Design Studio
         </p>
         <h1 className="font-serif text-5xl md:text-6xl lg:text-7xl font-bold text-primary-foreground leading-none text-balance">
-          Donde la elegancia encuentra su espacio
+          Donde la elegancia se diseña a tu medida
         </h1>
         <p className="mt-6 text-base md:text-lg text-primary-foreground/80 max-w-2xl mx-auto leading-relaxed font-sans">
-          Creamos interiores sofisticados que transforman la manera en que
-          vives, trabajas y sientes tu entorno.
+          Cada proyecto es único: creamos interiores personalizados,
+          sofisticados y funcionales, diseñados especialmente para reflejar tu
+          estilo y tus necesidades.
         </p>
         <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
           <Link
